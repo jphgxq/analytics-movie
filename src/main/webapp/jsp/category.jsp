@@ -379,7 +379,7 @@
 										</tbody>
 									</table>
 								</div>
-							</div>
+							</div> 
 						</div>
 						<div class="tab-pane" id="panel-4">
 							
