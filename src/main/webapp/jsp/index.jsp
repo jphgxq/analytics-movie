@@ -310,7 +310,7 @@
 					</ol>
 				</div>
 
-				<div class="col-md-6" style="min-width: 310px; height: 300px">
+				<div class="col-md-6">
 					<h4><strong>影讯动态</strong></h4>
 				</div>
 			</div>

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>音乐数据采集分析系统</title>
+    <title>电影数据采集分析系统</title>
     <!-- Bootstrap -->
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="bootstrap/css/bootstrap-combined.min.css" rel="stylesheet">
@@ -45,7 +45,7 @@
 							<a data-toggle="tab" href="#panel-3"><span class="glyphicon glyphicon-stop"></span>&nbsp;&nbsp;排片详情</a>
 						</li>
 						<li>
-							<a data-toggle="tab" href="#panel-4"><span class="glyphicon glyphicon-stop"></span>&nbsp;&nbsp;影片档期与类型关系</a>
+							<a data-toggle="tab" href="#panel-4" onclick="time_pie()"><span class="glyphicon glyphicon-stop"></span>&nbsp;&nbsp;影片档期与类型关系</a>
 						</li>
 						<li>
 							<a data-toggle="tab" href="#panel-5"><span class="glyphicon glyphicon-stop"></span>&nbsp;&nbsp;热门影片观众特征</a>
@@ -57,7 +57,7 @@
 							<a data-toggle="tab" href="#panel-7"><span class="glyphicon glyphicon-stop"></span>&nbsp;&nbsp;热门影片微博扩散特征</a>
 						</li>
 						<li>
-							<a data-toggle="tab" href="#panel-7"><span class="glyphicon glyphicon-stop"></span>&nbsp;&nbsp;热门影片票房强度量化</a>
+							<a data-toggle="tab" href="#panel-8"><span class="glyphicon glyphicon-stop"></span>&nbsp;&nbsp;热门影片票房强度量化</a>
 						</li>
 					</ul>
 					<div class="tab-content">
@@ -379,25 +379,114 @@
 										</tbody>
 									</table>
 								</div>
-							</div> 
+							</div>
 						</div>
 						<div class="tab-pane" id="panel-4">
-							
+							<ul class="nav nav-tabs">
+								<li class="active"><a data-toggle="tab" href="#">2016</a></li>
+								<li><a data-toggle="tab" href="#">2015</a></li>
+								<li><a data-toggle="tab" href="#">2014</a></li>
+								<li><a data-toggle="tab" href="#">2013</a></li>
+								<li><a data-toggle="tab" href="#">2012</a></li>
+								<li><a data-toggle="tab" href="#">2011</a></li>
+							</ul>
+							<ul class="nav nav-tabs">
+								<li class="active"><a data-toggle="tab" href="#">贺岁档</a></li>
+								<li><a data-toggle="tab" href="#">劳动节档</a></li>
+								<li><a data-toggle="tab" href="#">暑期档</a></li>
+								<li><a data-toggle="tab" href="#">国庆档</a></li>
+								<li><a data-toggle="tab" href="#">其他档</a></li>
+							</ul>
+							<div class="tab-content">
+								<div id="time-style" class="tab-pane active" style="width: 900px; height: 500px">
+								</div>
+								<div id="time-line1" class="tab-pane active" style="width: 900px; height: 500px">
+								</div>
+								<div id="time-line2" class="tab-pane active" style="width: 900px; height: 500px">
+								</div>
+							</div>
 						</div>
-							<div class="tab-pane" id="panel-5">
-							<p>
-								第一部分内容.
-							</p>
+						<div class="tab-pane" id="panel-5">
+							<div class="panel panel-default" style="border:1px solid #ddd;">
+								<h4><strong>地域分布</strong></h4>
+								<div id="area" style="width: 900px; height: 500px"></div>
+							</div>
+							<div style="margin-top: 20px; border:1px solid #ddd;">
+								<h4><strong>人群属性</strong></h4>
+								<div class="row-fluid">
+									<div id="age" class="col-md-6" style="width: 450px; height: 250px"></div>
+									<div id="sex" class="col-md-6" style="width: 450px; height: 250px"></div>
+								</div>
+							</div>
+							<div id="business" style="width: 900px; height: 500px; margin-top: 20px">
+							</div>
 						</div>
 						<div class="tab-pane" id="panel-6">
-							<p>
-								第二部分内容.
-							</p>
+							<div id="comment-num" style="width: 900px; height: 500px; border:1px solid #ddd;">
+							</div>
+							<div id="network-people" style="width: 900px; height: 500px; margin-top: 20px;">
+							</div>
+							<div id="comment-level" style="width: 900px; height: 500px;">
+							</div>
+							<div>
+								<h4><strong>评论内容</strong></h4>
+								<p>主要展现：网友觉得影片好的方面的描述</p>
+							</div>
 						</div>
-							<div class="tab-pane" id="panel-7">
-							<p>
-								第一部分内容.
-							</p>
+						<div class="tab-pane" id="panel-7">
+							<div id="blog" style="width: 900px; height: 500px; border:1px solid #ddd; overflow:hidden"></div>
+						</div>
+						<div class="tab-pane" id="panel-8">
+							<table class="table table-hover">
+								<tr>
+									<td>
+										<strong>网络口碑值</strong>
+									</td>
+									<td>
+										
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<strong>主创团队影响力值</strong>
+									</td>
+									<td>
+										
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<strong>影片类型与档期的量化值</strong>
+									</td>
+									<td>
+										
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<strong>影片排名的量化值</strong>
+									</td>
+									<td>
+										
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<strong>宣传效果的量化</strong>
+									</td>
+									<td>
+										
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<strong>最终量化值</strong>
+									</td>
+									<td>
+										
+									</td>
+								</tr>
+							</table>
 						</div>
 					</div>
 				</div>
@@ -417,7 +506,10 @@
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/category/category.js"></script>
     <script type="text/javascript" src="js/category/info.js"></script>
-
+    <script type="text/javascript" src="js/category/time_style.js"></script>
+    <script type="text/javascript" src="js/category/audience.js"></script>
+	<script type="text/javascript" src="js/category/comment.js"></script>
+	<script type="text/javascript" src="js/category/blog.js"></script>
 
   </body>
 </html>

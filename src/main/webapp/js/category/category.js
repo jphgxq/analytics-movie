@@ -88,7 +88,7 @@ $(function () {
 
 });
 
-
+//月票房趋势图
 function trend_month() {
 	  // 路径配置
     require.config({
@@ -177,6 +177,7 @@ function trend_month() {
 
 }
 
+//本周票房趋势图
 function trend_week() {
 	  // 路径配置
   require.config({
@@ -265,6 +266,7 @@ function trend_week() {
 
 }
 
+//热映票房趋势图
 function trend_hot() {
 	  // 路径配置
   require.config({
@@ -352,3 +354,5 @@ function trend_hot() {
 
 
 }
+
+

@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <nav class="blog-nav">
      <a class="blog-nav-item active" href="index.action">首页</a>
      <a class="blog-nav-item" href="category.action">影片实时数据</a>
-     <a class="blog-nav-item" href="#">影人实时数据</a>
+     <a class="blog-nav-item" href="actors.action">影人实时数据</a>
      <a class="blog-nav-item" href="#">Keydata资料库</a>
      <a class="blog-nav-item" href="#">报告生成</a>
      <a class="blog-nav-item" href="#">用户数据</a>
