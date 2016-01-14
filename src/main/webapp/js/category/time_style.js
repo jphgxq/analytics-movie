@@ -18,11 +18,11 @@ function time_pie() {
         var pieChart = ec.init(document.getElementById('time-style')); 
         
         option = {
-        	    title : {
-        	        text: '某站点用户访问来源',
-        	        subtext: '纯属虚构',
-        	        x: 'center'
-        	    },
+//        	    title : {
+//        	        text: '某站点用户访问来源',
+//        	        subtext: '纯属虚构',
+//        	        x: 'center'
+//        	    },
         	    tooltip : {
         	        trigger: 'item',
         	        formatter: "{a} <br/> {b} : {c} ({d} %)"
@@ -30,7 +30,7 @@ function time_pie() {
         	    legend: {
         	        orient: 'vertical',
         	        x: 'left',
-        	        data: ['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
+        	        data: ['神探夏洛克','唐人街探案','老炮儿','寻龙诀','恶棍天使','一念天堂','小门神','一切都好','诡娃娃','分手再说我爱你']
         	    },
         	    toolbox: {
         	        show : true,
@@ -60,11 +60,16 @@ function time_pie() {
         	                  type:'pie',
         	                  radius : ['50%', '60%'],
         	                  data:[
-        	                      {value:335, name:'直接访问'},
-        	                      {value:310, name:'邮件营销'},
-        	                      {value:234, name:'联盟广告'},
-        	                      {value:135, name:'视频广告'},
-        	                      {value:1548, name:'搜索引擎'}
+									{value:946, name:'老炮儿'},
+									{value:1406, name:'唐人街探案'},
+									{value:1764, name:'神探夏洛克'},
+									{value:817, name:'寻龙诀'},
+									{value:141, name:'恶棍天使'},
+									{value:128, name:'一念天堂'},
+									{value:92, name:'小门神'},
+									{value:32, name:'一切都好'},
+									{value:22, name:'诡娃娃'},
+									{value:12, name:'分手再说我爱你'}
         	                  ]
         	              }
         	          ]

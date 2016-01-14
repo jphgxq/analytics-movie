@@ -24,8 +24,8 @@
 	 <%@ include file="common/head.jsp" %>
      
      <div class="container">
-	     <div id="table-container" style="min-width: 310px; margin-top:10px">
-	     	<h4 id="landingpage-title" style="text-align:center">Keydata实时票房	2016年1月5日</h4>
+	     <div id="table-container" style="min-width: 310px; margin-top:10px;">
+	     	<h4 id="landingpage-title" style="text-align:center; margin-top: 30px">Keydata实时票房	2016年1月12日</h4>
 	     	<table class="table table-hover">
 	     		<thead>
 	     			<tr>
@@ -237,81 +237,215 @@
 	     					NEW
 	     				</td>
 	     			</tr>
+	     			<tr>
+	     				<td>
+	     					8
+	     				</td>
+	     				<td>
+	     					一切都好
+	     				</td>
+	     				<td>
+	     					32.4
+	     				</td>
+	     				<td>
+	     					0.60%
+	     				</td>
+	     				<td>
+	     					2529.5
+	     				</td>
+	     				<td>
+	     					1.73%
+	     				</td>
+	     				<td>
+	     					5
+	     				</td>
+	     				<td style="color:red">
+	     					NEW
+	     				</td>
+	     			</tr>
+	     			<tr>
+	     				<td>
+	     					9
+	     				</td>
+	     				<td>
+	     					诡娃娃
+	     				</td>
+	     				<td>
+	     					22.3
+	     				</td>
+	     				<td>
+	     					0.41%
+	     				</td>
+	     				<td>
+	     					242.7
+	     				</td>
+	     				<td>
+	     					0.21%
+	     				</td>
+	     				<td>
+	     					19
+	     				</td>
+	     				<td style="color:red">
+	     					NEW
+	     				</td>
+	     			</tr>
+	     			<tr>
+	     				<td>
+	     					10
+	     				</td>
+	     				<td>
+	     					分手再说我爱你
+	     				</td>
+	     				<td>
+	     					12.4
+	     				</td>
+	     				<td>
+	     					0.23%
+	     				</td>
+	     				<td>
+	     					1132.1
+	     				</td>
+	     				<td>
+	     					0.28%
+	     				</td>
+	     				<td>
+	     					13
+	     				</td>
+	     				<td style="color:red">
+	     					NEW
+	     				</td>
+	     			</tr>
 	     		</tbody>
 	     	</table>
 	     </div>
-	     
-	     <div class="container-fluid" style="margin-top:50px">
+	     <div aria-label="Left Align">
+	     	<span class="glyphicon glyphicon-ok-circle"></span>最近一月
+	     	<span class="glyphicon glyphicon-ok-circle" style="margin-left: 20px"></span>最近一周
+	     	<span class="glyphicon glyphicon-ok-circle" style="margin-left: 20px"></span>最近一天
+	     <div>
+	     <div>
+			<ul class="nav nav-pills">
+				<li role="presentation"><a href="#">12-23</a></li>
+				<li role="presentation"><a href="#">12-24</a></li>
+				<li role="presentation"><a href="#">12-25</a></li>
+				<li role="presentation"><a href="#">12-26</a></li>
+				<li role="presentation"><a href="#">12-27</a></li>
+				<li role="presentation"><a href="#">12-28</a></li>
+				<li role="presentation"><a href="#">12-29</a></li>
+				<li role="presentation"><a href="#">12-30</a></li>
+				<li role="presentation"><a href="#">12-31</a></li>
+				<li role="presentation"><a href="#">1-1</a></li>
+				<li role="presentation"><a href="#">1-2</a></li>
+				<li role="presentation"><a href="#">1-3</a></li>
+				<li role="presentation"><a href="#">1-4</a></li>
+				<li role="presentation"><a href="#">1-5</a></li>
+				<li role="presentation"><a href="#">1-6</a></li>
+				<li role="presentation"><a href="#">1-7</a></li>
+				<li role="presentation"><a href="#">1-8</a></li>
+				<li role="presentation"><a href="#">1-9</a></li>
+				<li role="presentation"><a href="#">1-10</a></li>
+				<li role="presentation"><a href="#">1-11</a></li>
+				<li role="presentation" class="active"><a href="#">1-12</a></li>
+			</ul>				
+		 </div>
+	     <div class="container-fluid" style="margin-top:30px">
 
 			<div class="row-fluid">
-				<div class="col-md-6">
+				<div class="col-md-3">
 						<div>
 							<h4><strong>排片统计</strong></h4>
 						</div>
 						<ol>
 							<li>
-								新闻资讯
+								神探夏洛克
 							</li>
 							<li>
-								体育竞技
+								唐人街探案
 							</li>
 							<li>
-								娱乐八卦
+								老炮儿
 							</li>
 							<li>
-								前沿科技
+								寻龙诀
 							</li>
 							<li>
-								环球财经
+								恶棍天使
 							</li>
 							<li>
-								天气预报
+								一念天堂
 							</li>
 							<li>
-								房产家居
+								小门神
 							</li>
 							<li>
-								网络游戏
+								一切都好
+							</li>
+							<li>
+								诡娃娃
+							</li>
+							<li>
+								分手再说我爱你
 							</li>
 						</ol>
 					</div>
-				<div id="movie-statistic" class="col-md-6" style="height: 300px"></div>
+				<div id="movie-statistic" class="col-md-9" style="height: 300px"></div>
 			</div>
-			<div class="row-fluid">
+			<div class="row-fluid" style="margin-top: 30px">
 				<div class="col-md-6">
 					<div>
 						<h4><strong>目前影片票房强度量化结果</strong></h4>
 					</div>
-					<ol>
-						<li>
-							新闻资讯
-						</li>
-						<li>
-							体育竞技
-						</li>
-						<li>
-							娱乐八卦
-						</li>
-						<li>
-							前沿科技
-						</li>
-						<li>
-							环球财经
-						</li>
-						<li>
-							天气预报
-						</li>
-						<li>
-							房产家居
-						</li>
-						<li>
-							网络游戏
-						</li>
-					</ol>
+					<table class="table table-hover">
+						<tr>
+							<td>
+								<span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span><strong>  电影名</strong>
+							</td>
+							<td>
+								捉妖记
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="glyphicon glyphicon-comment" aria-hidden="true"></span><strong>  口碑量化</strong>
+							</td>
+							<td>
+								77
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span><strong>  宣传效果量化</strong>
+							</td>
+							<td>
+								90
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="glyphicon glyphicon-education" aria-hidden="true"></span><strong>  创作团队量化</strong>
+							</td>
+							<td>
+								87
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="glyphicon glyphicon-check" aria-hidden="true"></span><strong>量化结果</strong>
+							</td>
+							<td>
+								87
+							</td>
+						</tr>
+					</table>
 				</div>
 
-				<div class="col-md-6">
+				<div class="col-md-6" style="height: 300px">
 					<h4><strong>影讯动态</strong></h4>
+					<div>
+						<p><strong>月度总结：9月国产片略胜进口片 总票房低于北美13%</strong></p>
+						<p>2015-11-09</p>
+						<p>全国9月份累计收入票房34.22亿元，较去年上涨14%，累计收入1.01亿元，同北美票房相比，低于北美票房13%</p>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -10,10 +10,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
      <a class="blog-nav-item active" href="index.action">首页</a>
      <a class="blog-nav-item" href="category.action">影片实时数据</a>
      <a class="blog-nav-item" href="actors.action">影人实时数据</a>
-     <a class="blog-nav-item" href="#">Keydata资料库</a>
-     <a class="blog-nav-item" href="#">报告生成</a>
-     <a class="blog-nav-item" href="#">用户数据</a>
-     <a class="blog-nav-item" href="#">联系keydata</a>
+     <a class="blog-nav-item" href="keydata.action">Keydata资料库</a>
+     <a class="blog-nav-item" href="report.action">报告生成</a>
+     <a class="blog-nav-item" href="userdata.action">用户数据源配置</a>
+     <a class="blog-nav-item" href="connectus.action">联系keydata</a>
    </nav>
  </div>
 </div>

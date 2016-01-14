@@ -15,4 +15,29 @@ public class IndexController {
     public String category(){
     	return "category";
     }
+    
+    @RequestMapping("actors")
+    public String actors(){
+    	return "actors";
+    }
+    
+    @RequestMapping("keydata")
+    public String keydata(){
+    	return "keydata";
+    }
+    
+    @RequestMapping("report")
+    public String report(){
+    	return "report";
+    }
+    
+    @RequestMapping("userdata")
+    public String userdata(){
+    	return "userdata";
+    }
+    
+    @RequestMapping("connectus")
+    public String connectus(){
+    	return "connectus";
+    }
 }

@@ -20,7 +20,7 @@ $(function () {
         
         option = {
         	    title : {
-        	    	text: 'iphone销量',
+        	    	text: '地域分布',
         	        subtext: '纯属虚构',
         	        x:'center'
         	    },
@@ -30,7 +30,7 @@ $(function () {
         	    legend: {
         	    	orient: 'vertical',
         	    	x: 'left',
-        	    	data: ['iphone3','iphone4','iphone5']
+        	    	data: ['老炮儿','寻龙诀','速度与激情7']
         	    },
         	    dataRange: {
         	        min: 0,
