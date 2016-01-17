@@ -1,5 +1,27 @@
 //主页全国排片统计饼状图
 $(function () {
+	$.ajax({
+		type: "POST",
+		url: "getRealTimeTicket.action",
+		dataype: "json",
+		success: function(data){
+			$('#realtimeticketstable').empty();
+			var html = '';
+			$.each(data.tickets, function(index, ticket){
+				index+=1;
+				if(index<=10){
+					html += '<tr><td>'+index+'</td><td>'+ticket['name']+'</td><td>'+ticket['real_time_tickets']+'</td><td>'+ticket['ticket_percent']+'</td><td>'+ticket['sum_tickets']+'</td><td>'+ticket['display_percent']+'</td><td>'+ticket['days']+'</td><td style="color: red">NEW</td></tr>';
+				}else{
+					return false;
+				}
+			});
+			$('#realtimeticketstable').html(html);
+		}
+	});
+	
+	var myDate = new Date();
+	$('#landingpage-title').html('KeyData票房数据      ' + myDate.toLocaleString());
+	
 	  // 路径配置
     require.config({
         paths: {
